@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <meta keywords="Уроки HTML, css, tags, meta, body, резюме, Олександр">
+    <meta description="Резюме Олександра, мама я программист.">
+    <style>
+        .jobs {
+    color: rgb(186, 15, 212);
+    font-size: 18px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    text-transform: uppercase; /* Верхний регистр */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень текста */
+}
+
+        .feedback{
+    background-image: url(imgs/scale_1200.png);
+    background-size: cover; /* Заполняет весь контейнер */
+    background-repeat: no-repeat; /* Не повторять */
+    background-position: center; /* Центрирование */
+    padding: 20px; /* Отступы внутри */
+    border-radius: 10px; /* Закругление углов */
+}
+.hobby {
+    color: chartreuse;
+    font-style: italic; /* Курсив */
+    border-bottom: 2px solid chartreuse; /* Линия под текстом */
+    padding: 5px; /* Отступ внутри */
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+        .me {
+    color: rgb(255, 0, 132);
+    background-color: rgba(255, 140, 0, 0.2); /* Полупрозрачный фон */
+    padding: 10px; /* Внутренний отступ */
+    border: 2px solid rgb(0, 255, 255); /* Граница */
+    display: inline-block; /* Чтобы текст не растягивал блок */
+    border-radius: 5px; /* Закругление краёв */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <img src="imgs/image.png" width="200"> 
+
+<hr>
+
+    <h1>Олександр Слюсаренко</h1>
+    <p class="me">Я <em>Студент</em> <strong>денной формы обучения</strong> в колледже</p>
+    <p class="me">Занимаюсь изучением <strong>HTML , CSS , JS</strong></p>
+
+<hr>
+<h2>Мои социальные сети</h2>
+<a href="https://t.me/BearKrist" target="_blank">Telegtam</a>
+<a href="https://www.tiktok.com/@danteshill" target="_blank">TikTok</a>
+
+<hr>
+
+<h2>Мои хобби</h2>
+<ul class="hobby">
+    <li>Программирование</li>
+    <li>Спорт</li>
+</ul>
+
+<hr>
+
+<h2>Занятость</h2>
+
+<table class="jobs">
+    <thead>
+        <tr>
+                <th>Название</th>
+                <th>Должность</th>
+                <th>Срок</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Школа</td>
+            <td>Ученик</td>
+            <td>9 лет</td>
+        </tr>
+        <tr>
+            <td>Колледж</td>
+            <td>Студент</td>
+            <td>3 года</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h2>Связаться со мной</h2>
+
+<form class="feedback">
+
+<div>
+    <label for="name">Ваше имя</label>
+    <input type="Name"  id="name" placeholder="Введите имя">
+</div>
+
+<div>
+    <label for="email">Ваш email</label>
+    <input type="email"  id="email" placeholder="Введите email">
+</div>
+
+<div>
+    <label for="message">Ваше сообщение</label> <br>
+    <textarea type="message"  id="message" placeholder="Введите сообщение..." cols="25" rows="5"> </textarea>
+</div>
+
+<button type="submit">Отправить</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</form>
+
+</body>
+</html>
