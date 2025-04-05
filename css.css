@@ -47,6 +47,31 @@ body {
     margin-bottom: 30px;
 }
 
+.btn{
+    background: #645e5e;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background: rgb(51, 173, 173);
+    color: rgb(197, 43, 115);
+}
+
+.btn:active {
+    color: #00bcd4;
+}
+
+.btn:visited {
+    color: #ff69b4;
+}
+
+
 
 .hobby {
     color: #7efb7e;
