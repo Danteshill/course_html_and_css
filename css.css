@@ -1,1 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    background: #1c0909;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: 550;
+    letter-spacing: 2px;
+    word-wrap: 5px;
+
+}
+
+
+.main-img {
+        display: block;
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+
+
+.jobs {
+    color: rgb(186, 15, 212);
+    font-size: 18px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    text-transform: uppercase; /* Верхний регистр */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень текста */
+}
+
+.feedback{
+    background-image: url(imgs/scale_1200.png);
+    background-size: cover; /* Заполняет весь контейнер */
+    background-repeat: no-repeat; /* Не повторять */
+    background-position: center; /* Центрирование */
+    padding: 20px; /* Отступы внутри */
+    border-radius: 10px; /* Закругление углов */
+}
+.hobby {
+    color: chartreuse;
+    font-style: italic; /* Курсив */
+    border-bottom: 2px solid chartreuse; /* Линия под текстом */
+    padding: 5px; /* Отступ внутри */
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+.me {
+    color: rgb(255, 0, 132);
+    background-color: rgba(255, 140, 0, 0.2); /* Полупрозрачный фон */
+    padding: 10px; /* Внутренний отступ */
+    border: 2px solid rgb(0, 255, 255); /* Граница */
+    display: inline-block; /* Чтобы текст не растягивал блок */
+    border-radius: 5px; /* Закругление краёв */
+}
+
+.info-text p {
+font-style: italic;
+font-weight: 900;
+}
