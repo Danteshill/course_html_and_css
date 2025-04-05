@@ -1,60 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background: #1c0909;
+    background: #121212;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 1.5em;
-    font-weight: 550;
-    letter-spacing: 2px;
-    word-wrap: 5px;
-
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
 }
 
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
 
 .main-img {
-        display: block;
-        width: 200px;
-        height: auto;
-        border-radius: 10px;
-    }
-    
-
+    display: block;
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px auto;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); */
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
 
 .jobs {
-    color: rgb(186, 15, 212);
-    font-size: 18px; /* Размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
-    text-transform: uppercase; /* Верхний регистр */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень текста */
+    color: #00bcd4;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 188, 212, 0.2);
+    margin-bottom: 20px;
 }
 
-.feedback{
-    background-image: url(imgs/scale_1200.png);
-    background-size: cover; /* Заполняет весь контейнер */
-    background-repeat: no-repeat; /* Не повторять */
-    background-position: center; /* Центрирование */
-    padding: 20px; /* Отступы внутри */
-    border-radius: 10px; /* Закругление углов */
+.feedback {
+    background-image: url('imgs/scale_1200.png');
+    background-color: rgba(30, 30, 30, 0.7); /* полупрозрачный */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
+
+
 .hobby {
-    color: chartreuse;
-    font-style: italic; /* Курсив */
-    border-bottom: 2px solid chartreuse; /* Линия под текстом */
-    padding: 5px; /* Отступ внутри */
-    margin: 10px 0; /* Отступ сверху и снизу */
+    color: #7efb7e;
+    font-style: italic;
+    border-bottom: 2px solid #7efb7e;
+    padding: 5px;
+    margin: 10px 0;
 }
 
 .me {
-    color: rgb(255, 0, 132);
-    background-color: rgba(255, 140, 0, 0.2); /* Полупрозрачный фон */
-    padding: 10px; /* Внутренний отступ */
-    border: 2px solid rgb(0, 255, 255); /* Граница */
-    display: inline-block; /* Чтобы текст не растягивал блок */
-    border-radius: 5px; /* Закругление краёв */
+    color: #ff69b4;
+    background-color: rgba(255, 105, 180, 0.1);
+    padding: 10px 15px;
+    border: 1px solid #ff69b4;
+    display: inline-block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.me1 {
+    color: #ff69b4;
+    background-color: rgba(255, 105, 180, 0.1);
+    padding: 10px 15px;
+    border: 1px solid #ff69b4;
+    display: inline-block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.MyName {
+    margin-left: 300px;
 }
 
 .info-text p {
-font-style: italic;
-font-weight: 900;
+    font-style: italic;
+    font-weight: 600;
+    color: #aaa;
 }
+
+.card1, .card2, .card3 {
+    border: none;
+    border-radius: 15px;
+    background: #2a2a2a;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.03);
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .main-img {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .me,
+    .me1,
+    .MyName {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .feedback {
+        padding: 15px;
+    }
+
+    .jobs {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .card1, .card2, .card3 {
+        padding: 15px;
+    }
+}
+
