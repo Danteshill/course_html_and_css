@@ -23,8 +23,10 @@ body {
     height: auto;
     border-radius: 12px;
     margin: 20px auto;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); */
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+    /* box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); */
+    border: 3px solid #f0f0f0;
+
 }
 
 .jobs {
@@ -45,6 +47,19 @@ body {
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 30px;
+}
+
+.feedback .label {
+    color: #7efb7e;
+}
+
+.feedback .input {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.feedback .input:hover {
+    background: rgba(0, 0, 0, 0.6) ;
 }
 
 .btn{
@@ -79,7 +94,9 @@ body {
     border-bottom: 2px solid #7efb7e;
     padding: 5px;
     margin: 10px 0;
+    
 }
+
 
 .me {
     color: #ff69b4;
@@ -114,19 +131,19 @@ body {
 }
 
 .card1, .card2, .card3 {
-    border: none;
     border-radius: 15px;
     background: #2a2a2a;
     padding: 20px;
     margin: 15px 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card1:hover, .card2:hover, .card3:hover {
-    transform: scale(1.03);
-    background: #333;
+    box-shadow: 0 0 15px 4px rgba(0, 255, 255, 0.3); /* голубая подсветка */
+    transform: translateY(-3px); /* лёгкое поднятие */
 }
+
 
 @media (max-width: 768px) {
     .container {
