@@ -88,6 +88,7 @@ body {
     color: #ff69b4;
 }
 
+
 .hobby {
     color: #7efb7e;
     font-style: italic;
@@ -96,7 +97,18 @@ body {
     margin: 10px 0;
 }
 
-.me, .me1 {
+.me {
+    color: #ff69b4;
+    background-color: rgba(255, 105, 180, 0.1);
+    padding: 10px 15px;
+    border: 1px solid #ff69b4;
+    display: inline-block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.me1 {
     color: #ff69b4;
     background-color: rgba(255, 105, 180, 0.1);
     padding: 10px 15px;
