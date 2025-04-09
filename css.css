@@ -15,6 +15,7 @@ body {
 .container {
     max-width: 1000px;
     margin: auto;
+    padding: 20px;
 }
 
 .main-img {
@@ -24,9 +25,7 @@ body {
     border-radius: 12px;
     margin: 20px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
-    /* box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); */
     border: 3px solid #f0f0f0;
-
 }
 
 .jobs {
@@ -36,11 +35,12 @@ body {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0, 188, 212, 0.2);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .feedback {
     background-image: url('imgs/scale_1200.png');
-    background-color: rgba(30, 30, 30, 0.7); /* полупрозрачный */
+    background-color: rgba(30, 30, 30, 0.7);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,10 +59,10 @@ body {
 }
 
 .feedback .input:hover {
-    background: rgba(0, 0, 0, 0.6) ;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.btn{
+.btn {
     background: #645e5e;
     padding: 15px 20px;
     color: #fff;
@@ -70,6 +70,8 @@ body {
     cursor: pointer;
     border-radius: 10px;
     font-family: inherit;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -86,19 +88,15 @@ body {
     color: #ff69b4;
 }
 
-
-
 .hobby {
     color: #7efb7e;
     font-style: italic;
     border-bottom: 2px solid #7efb7e;
     padding: 5px;
     margin: 10px 0;
-    
 }
 
-
-.me {
+.me, .me1 {
     color: #ff69b4;
     background-color: rgba(255, 105, 180, 0.1);
     padding: 10px 15px;
@@ -106,28 +104,21 @@ body {
     display: inline-block;
     border-radius: 8px;
     margin-bottom: 10px;
-    margin-left: 100px;
-}
-
-.me1 {
-    color: #ff69b4;
-    background-color: rgba(255, 105, 180, 0.1);
-    padding: 10px 15px;
-    border: 1px solid #ff69b4;
-    display: inline-block;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .MyName {
-    margin-left: 300px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .info-text p {
     font-style: italic;
     font-weight: 600;
     color: #aaa;
+    text-align: center;
 }
 
 .card1, .card2, .card3 {
@@ -140,8 +131,8 @@ body {
 }
 
 .card1:hover, .card2:hover, .card3:hover {
-    box-shadow: 0 0 15px 4px rgba(0, 255, 255, 0.3); /* голубая подсветка */
-    transform: translateY(-3px); /* лёгкое поднятие */
+    box-shadow: 0 0 15px 4px rgba(0, 255, 255, 0.3);
+    transform: translateY(-3px);
 }
 
 .sidebar {
@@ -152,6 +143,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 1000;
 }
 
 .sidebar a {
@@ -162,14 +154,13 @@ body {
     border-radius: 8px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    font-weight: bold;
 }
 
 .sidebar a:hover {
     background: #444;
     box-shadow: 0 0 10px #00bcd4;
 }
-
-
 
 @media (max-width: 768px) {
     .container {
@@ -183,10 +174,14 @@ body {
     }
 
     .me,
-    .me1,
-    .MyName {
+    .me1 {
         margin-left: 0;
         display: block;
+        text-align: center;
+    }
+
+    .MyName {
+        margin-left: 0;
         text-align: center;
     }
 
@@ -202,5 +197,16 @@ body {
     .card1, .card2, .card3 {
         padding: 15px;
     }
-}
 
+    .sidebar {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .sidebar a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
